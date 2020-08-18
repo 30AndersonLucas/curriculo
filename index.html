@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Currículo</title>
+</head>
+<body>
+    
+    <div class="nome">
+        <p id="no">ANDERSON LUCAS</p>
+        <p>Programador</p>
+    </div>
+
+    <div class="codigos">
+        <p id="cod">Códigos</p>
+        <p id="html">HTML/CSS</p>
+        <p id="porcentagem1"></p>
+        <p id="porcentagem01"></p>
+        <p id="php">PHP</p>
+        <p id="porcentagem02"></p>
+        <p id="porcentagem2"></p>
+        <p id="js">JavaScript</p>
+        <p id="porcentagem03"></p>
+        <p id="porcentagem3"></p>
+</div>
+   
+    <div class="contato">
+        <p id="con">Contato</p>
+        <p id="tel1"  onmouseenter="enter1()" onmouseout="sair1()">(91) 98809-5313</p>
+        <p id="tel2" onmouseenter="enter2()" onmouseout="sair2()">(91) 98733-8523</p>
+    </div>
+
+    <div class="email">
+        <p id="e">E-mail</p>
+        <p id="mail" onmouseenter="entermail()" onmouseout="sairmail()">anderson.1717@outlook.com</p>
+    </div>
+  
+    <div class="endereco">
+        <p id="end" >Endereço</p>
+        <p id="rua"onmouseenter="enterrua()" onmouseout="sairrua()">Rua: Manoel Teixeira Mota Nº175</p>
+        <p id="bairro">Bairro: Saudade I - Castanhal-PA</p>
+    </div>
+</div>
+    
+   <div class="container">
+   
+        <p id="dp">Dados Pessoais </p>
+        
+        <p><strong>Data de nascimento:</strong> 03 de Dezembro de 2000 (19 anos)</p>
+        <p><strong>Naturalidade:</strong> Castanhal-PA</p>
+        <p><strong>Estado Civil:</strong> Solteiro</p>
+        <p>Portador de todos os documentos necessários para inserção no mercado de trabalho</p>
+    
+    
+           <p id="dp">Formação</p>
+        <p>Cursando Análise e Desenvolvimento de Sistemas – Estácio. 5º semestre.</p>
+    
+   
+
+    
+        <p id="dp">Experiência Profissional</p>
+        <p>2019/2020 - Estágio (6 meses) como auxiliar na manutenção preventiva e corretiva em hardware e software, e no atendimento a clientes internos. </p>
+    
+    
+        <p id="dp">Cursos Profissionalizantes</p>
+        <p>Instituição: T&T Informática               Carga Horária: 64 horas 
+ 
+            • Informática Básica   • Word, Excel, Power Point, Corel Draw X7, Montagem de Micro  
+             
+             
+            Instituição: Senai                              Carga Horária: 14 horas    • Tecnologia da Informação e Comunicação  </p>
+    
+    
+        <p id="dp">GitHub</p>
+        <p> <strong>Nickname:</strong> 30AndersonLucas</p>
+    
+    
+    
+        <p id="dp">Urls de projetos</p>
+        <p>https://and-flix.vercel.app </p>
+        <p>https://formulario-kappa.vercel.app </p>
+    
+</div>
+
+
+    <script>
+        var t1 = window.document.getElementById('tel1')
+        var t2 = window.document.getElementById('tel2')
+        var mail = window.document.getElementById('mail')
+        var rua = window.document.getElementById('rua')
+        var bairro = document.getElementById('bairro')
+        bairro.addEventListener('mouseenter', bairroentrar)
+        bairro.addEventListener('mouseout', bairrosair)
+        
+        function enter1(){
+            
+            t1.style.transform= "scale(2)"; 
+            t1.style.cursor="zoom-in";
+        }
+
+        function sair1(){
+            t1.style.transform="scale(1)";
+         }
+
+        function enter2(){
+            
+            t2.style.transform= "scale(2)"; 
+            t2.style.cursor="zoom-in";
+        }
+
+        function sair2(){
+            t2.style.transform="scale(1)";
+         }
+
+        function entermail(){
+            
+            mail.style.transform= "scale(2)";
+            mail.style.cursor="zoom-in";
+          
+            
+            mail.style.wordWrap="break-word";//Faz a quebra de linha
+            mail.style.marginLeft="30%";
+            mail.style.width="87px";
+            mail.style.height="20px";
+              
+             }
+
+        function sairmail(){
+            mail.style.transform="scale(1)";
+            mail.style.marginLeft="10%";
+            mail.style.width="160px";
+         }
+         
+         function enterrua(){
+            rua.style.cursor="zoom-in"
+            rua.style.transform="scale(2)"
+            rua.style.width="87px"
+            rua.style.height="20px"
+            rua.style.marginLeft="30%";
+
+         }
+
+         function sairrua(){
+            rua.style.transform="scale(1)";
+            rua.style.marginLeft="10%";
+            rua.style.width="160px";
+            bairro.style.color="black"
+          }
+
+         function bairroentrar(){
+            bairro.style.cursor="zoom-in"
+            bairro.style.transform="scale(2)"
+            bairro.style.width="87px"
+            bairro.style.height="20px"
+            bairro.style.marginLeft="30%";
+           
+         }
+
+         function bairrosair(){
+            bairro.style.transform="scale(1)";
+            bairro.style.marginLeft="-1%";
+            bairro.style.width="200px";
+            rua.style.color="black"
+         }
+
+    </script>
+</body>
+</html>
